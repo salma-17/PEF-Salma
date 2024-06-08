@@ -1,0 +1,78 @@
+/* src/pages/Accueil.css */
+
+.accueil-container {
+  padding-top: 80px; 
+  padding-left: 20px;
+  padding: 20px;
+  text-align: center;
+  margin-left: 150px;
+}
+
+/* .search-bar{
+  display: inline-block;
+  border: 1px solid blue;
+  margin: 10px;
+
+}
+.user-options{
+  display: inline-block;
+}
+.notification-icon{
+  display: inline-block;
+  border: 1px solid red;
+  margin: 10px;
+
+}
+.settings-icon{
+  display: inline-block;
+  border: 1px solid purple;
+  margin: 10px;
+
+} */
+
+.accueil-header {
+  margin-bottom: 40px;
+}
+
+
+.accueil-header h1 {
+  font-size: 2.5em;
+  color: #004080;
+}
+
+.accueil-header p {
+  font-size: 1.2em;
+  color: #666666;
+}
+
+.accueil-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.accueil-card {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.accueil-card:hover {
+  transform: scale(1.05);
+}
+
+.accueil-card h2 {
+  font-size: 1.5em;
+  color: #004080;
+  margin-bottom: 10px;
+}
+
+.accueil-card p {
+  font-size: 1em;
+  color: #666666;
+}
