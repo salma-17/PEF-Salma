@@ -5,7 +5,10 @@
   padding-left: 20px;
   padding: 20px;
   text-align: center;
-  margin-left: 150px;
+}
+.signIn{
+  text-decoration: none;
+  margin: 0px 10px 0px 10px;
 }
 
 /* .search-bar{
@@ -13,17 +16,25 @@
   border: 1px solid blue;
   margin: 10px;
 
-}
+} */
+
 .user-options{
-  display: inline-block;
-}
-.notification-icon{
-  display: inline-block;
-  border: 1px solid red;
-  margin: 10px;
+  /* border: 1px solid red; */
+  height: 30px;
+  display: flex;
+  text-align: center;
+  justify-content: right;
+  /* margin-right: 100px; */
 
 }
-.settings-icon{
+
+
+.notification-icon{
+  display: inline-block;
+  /* border: 1px solid red; */
+}
+
+/* .settings-icon{
   display: inline-block;
   border: 1px solid purple;
   margin: 10px;
