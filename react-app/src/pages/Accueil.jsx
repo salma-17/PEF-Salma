@@ -25,6 +25,24 @@ const Accueil = () => {
                     </div> */}
                 </div>
             </header>
+            <section className="accueil-content">
+                <div className="accueil-card">
+                    <h2>Propriétaires</h2>
+                    <p >Gérez les informations et les communications avec les propriétaires.</p>
+                </div>
+                <div className="accueil-card">
+                    <h2>Immeubles</h2>
+                    <p>Suivez les détails et l'entretien des immeubles.</p>
+                </div>
+                <div className="accueil-card">
+                    <h2>Réunions</h2>
+                    <p>Organisez et enregistrez les réunions des copropriétaires.</p>
+                </div>
+                <div className="accueil-card">
+                    <h2>Contact</h2>
+                    <p>Contactez-nous pour toute question ou assistance.</p>
+                </div>
+            </section>
             
         </div>
     );

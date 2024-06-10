@@ -16,7 +16,7 @@ const SignIn = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         dispatch(login({ email, password }))
-            .then(() => navigate('/'))
+            .then(() => navigate('/layout'))
             .catch(() => {});
     };
 

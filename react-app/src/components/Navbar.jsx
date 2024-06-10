@@ -15,37 +15,37 @@ const Navbar = () => {
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <Link className="nav-link" to="/">
+                        <Link className="nav-link" to="/layout">
                             <FontAwesomeIcon icon={faHome} /> Accueil
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/appartements">
+                        <Link className="nav-link" to="/layout/appartements">
                             <FontAwesomeIcon icon={faBuilding} /> Appartements
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/owners">
+                        <Link className="nav-link" to="/layout/owners">
                             <FontAwesomeIcon icon={faUser} /> Owners
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/employes">
+                        <Link className="nav-link" to="/layout/employes">
                             <FontAwesomeIcon icon={faUsers} /> Employes
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/companys">
+                        <Link className="nav-link" to="/layout/companys">
                             <FontAwesomeIcon icon={faIndustry} /> Companys
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/blooks">
+                        <Link className="nav-link" to="/layout/blooks">
                             <FontAwesomeIcon icon={faBook} /> Blooks
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/reports">
+                        <Link className="nav-link" to="/layout/reports">
                             <FontAwesomeIcon icon={faChartBar} /> Reports
                         </Link>
                     </li>
@@ -54,5 +54,4 @@ const Navbar = () => {
         </nav>
     );
 };
-
 export default Navbar;
