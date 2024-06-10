@@ -25,7 +25,7 @@ function App() {
                 <Route path="/profile" element={<Profile />} />
                 {/* <Route path="/signin" element={<SignOut />} /> */}
                 <Route path="/" element={<Navigate to="/signin" replace />} />
-                <Route path="/layout" element={<Layout />}>
+                <Route path="/layoutAdmin" element={<Layout />}>
                     <Route index element={<Accueil />} />
                     <Route path="owners" element={<Owners />} />
                     <Route path="appartements" element={<Appartements />} />

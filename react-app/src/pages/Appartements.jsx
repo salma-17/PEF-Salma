@@ -5,7 +5,7 @@ import React from 'react';
 const Appartements = () => {
     return (
         <div>
-            <h1>Immeubles</h1>
+            <h1>Appartements</h1>
             <p>Informations sur les immeubles gérés.</p>
         </div>
     );

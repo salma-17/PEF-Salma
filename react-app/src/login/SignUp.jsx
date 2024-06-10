@@ -44,7 +44,7 @@ const SignUp = () => {
     return (
         <div className="signup-container">
             <form onSubmit={handleSubmit} className="signup-form">
-                <h2>Inscription</h2>
+                <h2>Sign UP</h2>
                 {error && <p className="error">{error}</p>}
                 <div className="form-group">
                     <label htmlFor="name">Nom:</label>

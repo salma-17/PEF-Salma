@@ -2,7 +2,7 @@
 .navbar {
   background-color:rgba(237, 243, 253, 0.819); /* Couleur de fond */
   padding: 10px 20px;
-  margin-right: 150px;
+  /* margin-right: 150px; */
   position: fixed;
   display: flex; /* Utiliser Flexbox pour disposer les éléments */
   flex-direction: column;
