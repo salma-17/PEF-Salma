@@ -1,7 +1,7 @@
 // src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import LayoutAdmin from './components/LayoutAdmin';
+import LayoutAdmin from './admin_login/LayoutAdmin';
 import LayoutOwner from './owner_login/LayoutOwner';
 import Accueil from './pages/Accueil';
 import Owners from './pages/Owners';
@@ -16,6 +16,7 @@ import SignUp from './login/SignUp';  // Importez le composant Signup
 import Profile from './pages/Profile';
 import OwnerAccueil from './owners/OwnerAccueil';
 import Payement from './owners/Payement';
+
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
                     <Route path="blooks" element={<Blooks />} />
                     <Route path="reports" element={<Reports />} />
                     <Route path="notifications" element={<Notifications />} />
+
                 </Route>
                 
 $            </Routes>

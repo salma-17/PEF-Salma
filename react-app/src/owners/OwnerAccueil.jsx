@@ -10,7 +10,6 @@ import NavbarOwner from '../owner_login/NavbarOwner';
 const OwnerAccueil = () => {
     return (
         <div className="accueil-container">
-            {/* <NavbarOwner /> */}
             <div className='img-acc'>
                 <div className='div-acc'><p className='para-one'>Welcome to</p> <p className='para-tow'>Our Syndic Gestion</p></div>
             </div>

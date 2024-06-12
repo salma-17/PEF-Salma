@@ -29,7 +29,15 @@
 
 }
 
-
+.app {
+  border: 2px solid #c7c7c7; 
+  padding: 15px;
+  margin: 10px 10px; 
+  width: 140px;
+  height: 50px;
+  background-color: #c3e2f7;
+  display: inline-block;
+}
 .notification-icon{
   display: inline-block;
   /* border: 1px solid red; */

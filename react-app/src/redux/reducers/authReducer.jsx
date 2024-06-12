@@ -6,7 +6,7 @@ const initialState = {
   user: {
     name: Cookies.get('userName') || '',
     email: Cookies.get('userEmail') || '',
-    type_id: Cookies.get('userType') || 1, // Correct this line to read 'userType' cookie
+    type_id: Cookies.get('userType') || 0, // Correct this line to read 'userType' cookie
     
   },
   isAuthenticated: !!Cookies.get('token'),

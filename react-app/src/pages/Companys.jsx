@@ -5,6 +5,7 @@ const Companys = () => {
         <div>
             <h1>Companys</h1>
             <p>Calendrier et compte-rendus des réunions.</p>
+            
         </div>
     );
 };

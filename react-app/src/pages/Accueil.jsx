@@ -1,11 +1,58 @@
 // src/pages/Accueil.js
 
-import React from 'react';
+import { useState, useEffect } from 'react';
 import './Accueil.css'; // Importez le fichier CSS pour la page d'accueil
 import { Link } from 'react-router-dom';
-import image from '../assets/accueil.jpg'
+import axios from 'axios';
+import image from '../assets/accueil.jpg';
 
 const Accueil = () => {
+    const [appartements, setAppartements] = useState([]);
+    const [appartementCount, setAppartementCount] = useState(0); // État pour stocker le nombre d'appartements
+    const [blooks, setBlooks] = useState([]);
+    const [blooksCount, setBlooksCount] = useState(0);
+    const [owners, setOwners] = useState([]);
+    const [ownersCount, setOwnersCount] = useState(0);
+  useEffect(() => {
+    fetchAppartements();
+  }, []);
+  useEffect(() => {
+    fetchBloocks();
+  }, []);
+  useEffect(() => {
+    fetchOwners();
+  }, []);
+
+  const fetchAppartements = async () => {
+    try {
+      const response = await axios.get('http://localhost:8000/api/appartements');
+      setAppartements(response.data);
+      setAppartementCount(response.data.length); // Mettre à jour le nombre d'appartements
+    } catch (error) {
+      console.error('Error fetching appartements:', error);
+    }
+  };
+
+  const fetchBloocks = async () => {
+    try {
+      const response = await axios.get('http://localhost:8000/api/blooks');
+      setBlooks(response.data);
+      setBlooksCount(response.data.length); // Mettre à jour le nombre d'appartements
+    } catch (error) {
+      console.error('Error fetching blooks:', error);
+    }
+  };
+  
+  const fetchOwners = async () => {
+    try {
+      const response = await axios.get('http://localhost:8000/api/owners');
+      setOwners(response.data);
+      setOwnersCount(response.data.length); // Mettre à jour le nombre d'appartements
+    } catch (error) {
+      console.error('Error fetching blooks:', error);
+    }
+  };
+
     return (
         <div className="accueil-container">
             <header className="accueil-header">
@@ -29,6 +76,10 @@ const Accueil = () => {
             {/* <div className='img-acc'>
                 <img className='image' src={image} alt="your image" />
             </div> */}
+            <div className='app'>N Appretements: {appartementCount}</div>
+            <div className='app'>N Blooks : {blooksCount}</div>
+            <div className='app'>N Owners : {ownersCount}</div>
+
             <section className="accueil-content">
                 <Link to="appartements">
                     <div className="accueil-card">
