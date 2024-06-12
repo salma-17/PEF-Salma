@@ -16,6 +16,7 @@ import Profile from './pages/Profile';
 // import SignOut from './login/SignOut';  // Importez le composant ForgotPassword
 
 
+
 function App() {
     return (
         <Router>
@@ -34,6 +35,7 @@ function App() {
                     <Route path="blooks" element={<Blooks />} />
                     <Route path="reports" element={<Reports />} />
                     <Route path="notifications" element={<Notifications />} />
+
                 </Route>
             </Routes>
         </Router>
