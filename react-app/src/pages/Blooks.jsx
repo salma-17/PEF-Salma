@@ -126,7 +126,7 @@ const Blocks = () => {
       </div>
 
       <button className="add-button" onClick={() => openModal('add')}>
-        Add block
+        Add blocks
       </button>
       <table>
         <thead>
