@@ -20,6 +20,11 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li className="nav-item">
+                        <Link className="nav-link" to="/blooks">
+                            <FontAwesomeIcon icon={faBook} /> Blooks
+                        </Link>
+                    </li>
+                    <li className="nav-item">
                         <Link className="nav-link" to="/appartements">
                             <FontAwesomeIcon icon={faBuilding} /> Appartements
                         </Link>
@@ -39,11 +44,7 @@ const Navbar = () => {
                             <FontAwesomeIcon icon={faIndustry} /> Companys
                         </Link>
                     </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/blooks">
-                            <FontAwesomeIcon icon={faBook} /> Blooks
-                        </Link>
-                    </li>
+               
                     <li className="nav-item">
                         <Link className="nav-link" to="/reports">
                             <FontAwesomeIcon icon={faChartBar} /> Reports
