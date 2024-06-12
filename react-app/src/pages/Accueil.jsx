@@ -1,5 +1,3 @@
-// src/pages/Accueil.js
-
 import React from 'react';
 import './Accueil.css'; // Importez le fichier CSS pour la page d'accueil
 import { Link } from 'react-router-dom';

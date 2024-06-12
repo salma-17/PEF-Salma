@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faBuilding, faUser, faUsers, faIndustry, faBook, faChartBar } from '@fortawesome/free-solid-svg-icons';
-import './Navbar.css';  // Importez le fichier CSS
+import './Navbar.css';  
 import logo from '../assets/logoS.png';
 
 const Navbar = () => {
@@ -21,7 +21,7 @@ const Navbar = () => {
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to="/appartements">
-                            <FontAwesomeIcon icon={faBuilding} /> Appartements
+                            <FontAwesomeIcon icon={faBuilding} />  Appartements
                         </Link>
                     </li>
                     <li className="nav-item">
