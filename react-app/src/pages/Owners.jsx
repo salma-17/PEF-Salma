@@ -17,6 +17,7 @@ function Owners() {
   const [filterByName, setFilterByName] = useState(''); // État pour stocker le filtre par nom
   const [errorMessage, setErrorMessage] = useState(''); // État pour le message d'erreur
 
+<<<<<<< HEAD
   useEffect(() => {
     fetchOwners();
   }, []);
@@ -179,6 +180,13 @@ function Owners() {
               </div>
             </div>
           </div>
+=======
+const Owners = () => {
+    return (
+        <div>
+            <h1>Owners</h1>
+            <p>Liste des propriétaires et leurs informations.</p>
+>>>>>>> daf83a487554fc9801848f8a112a6eae8fa6d16c
         </div>
       )}
       {showEditModal && (

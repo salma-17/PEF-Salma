@@ -16,14 +16,14 @@ const SignIn = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         dispatch(login({ email, password }))
-            .then(() => navigate('/'))
+            .then(() => navigate('/layoutAdmin'))
             .catch(() => {});
     };
 
     return (
         <div className="signin-container">
             <form onSubmit={handleSubmit} className="signin-form">
-                <h2>Connexion</h2>
+                <h2>Sign In</h2>
                 {error && <p className="error">{error}</p>}
                 <div className="form-group">
                     <label htmlFor="email">Email:</label>

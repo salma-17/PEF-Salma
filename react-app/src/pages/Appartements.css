@@ -1,0 +1,184 @@
+/* Container and layout styles */
+.appartements-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header */
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  /* Error message */
+  .error {
+    color: red;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Add button */
+  .add-button {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px 20px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-button:hover {
+    background-color: #2196F3;
+  }
+  
+  /* Table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  table th {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Table action buttons */
+  table button {
+    padding: 5px 10px;
+    margin: 2px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  table button:hover {
+    opacity: 0.9;
+  }
+  
+  table .details-button {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  table .update-button {
+    background-color: #FF9800;
+    color: white;
+  }
+  
+  table .delete-button {
+    background-color: #F44336;
+    color: white;
+  }
+  
+  /* Modal styles */
+  .ReactModal__Overlay {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+  }
+  
+  .ReactModal__Content {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modal h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .modal form div {
+    margin-bottom: 15px;
+  }
+  
+  .modal form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .modal form input,
+  .modal form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .modal form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .modal form .submit-button {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .modal form .submit-button:hover {
+    background-color: #45A049;
+  }
+  
+  .modal form .cancel-button {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .modal form .cancel-button:hover {
+    background-color: #5a6268;
+  }
+
+  .search-container {
+    margin-bottom: 20px;
+  }
+  
+  .search-container input[type="text"] {
+    padding: 8px;
+    width: 200px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .search-container input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px #007bff;
+  }
+  
+  

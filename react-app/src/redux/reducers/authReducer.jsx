@@ -1,5 +1,5 @@
 // src/redux/reducers/authReducer.js
-import { LOGIN_SUCCESS, LOGIN_FAILURE, LOGOUT, REGISTER_SUCCESS, REGISTER_FAILURE } from '../actions/types';
+import { LOGIN_SUCCESS, LOGIN_FAILURE, LOGOUT, REGISTER_REQUEST, REGISTER_SUCCESS, REGISTER_FAILURE } from '../actions/types';
 import Cookies from 'js-cookie';
 
 const initialState = {
@@ -10,24 +10,33 @@ const initialState = {
     },
     isAuthenticated: !!Cookies.get('token'),
     error: null,
+    loading: false,
 };
 
 export default function(state = initialState, action) {
     switch(action.type) {
-        case LOGIN_SUCCESS:
+        case REGISTER_REQUEST:
+            return {
+                ...state,
+                loading: true,
+                error: null,
+            };
         case REGISTER_SUCCESS:
+        case LOGIN_SUCCESS:
             return {
                 ...state,
                 token: action.payload.token,
                 user: action.payload.user,
                 isAuthenticated: true,
+                loading: false,
                 error: null,
             };
-        case LOGIN_FAILURE:
         case REGISTER_FAILURE:
+        case LOGIN_FAILURE:
             return {
                 ...state,
                 error: action.payload,
+                loading: false,
             };
         case LOGOUT:
             return {
@@ -36,6 +45,7 @@ export default function(state = initialState, action) {
                 user: {},
                 isAuthenticated: false,
                 error: null,
+                loading: false,
             };
         default:
             return state;

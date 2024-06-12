@@ -1,14 +1,15 @@
 /* src/pages/Accueil.css */
 
 .accueil-container {
-  padding-top: 80px; 
-  padding-left: 20px;
-  padding: 20px;
+  /* padding-top: 20px;  */
+  /* padding-left: 20px; */
+  /* padding: 20px; */
   text-align: center;
+
 }
-.signIn{
+.signout{
   text-decoration: none;
-  margin: 0px 10px 0px 10px;
+  margin: 0px 10px 0px 5px;
 }
 
 /* .search-bar{
@@ -42,7 +43,8 @@
 } */
 
 .accueil-header {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  height: 400px;
 }
 
 
@@ -61,7 +63,13 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-
+.image{
+  width: 100%;
+  height: 400px;
+}
+.img-acc{
+  margin-bottom: 40px;
+}
 .accueil-card {
   background-color: #f9f9f9;
   border: 1px solid #e0e0e0;
@@ -69,6 +77,7 @@
   padding: 20px;
   margin: 10px;
   width: 200px;
+  height: 140px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
 }
@@ -87,3 +96,6 @@
   font-size: 1em;
   color: #666666;
 }
+/* .accueil-content{
+  border: 1px solid red;
+} */

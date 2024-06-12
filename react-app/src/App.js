@@ -11,7 +11,7 @@ import Blooks from './pages/Blooks';
 import Reports from './pages/Reports';
 import Notifications from './pages/Notifications';
 import SignIn from './login/SignIn';
-// import SignUp from './login/SignUp';  // Importez le composant Signup
+import SignUp from './login/SignUp';  // Importez le composant Signup
 import Profile from './pages/Profile';
 // import SignOut from './login/SignOut';  // Importez le composant ForgotPassword
 
@@ -22,11 +22,11 @@ function App() {
         <Router>
             <Routes>
                 <Route path="/signin" element={<SignIn />} />
-                {/* <Route path="/signup" element={<SignUp />} /> */}
+                <Route path="/signup" element={<SignUp />} />
                 <Route path="/profile" element={<Profile />} />
                 {/* <Route path="/signin" element={<SignOut />} /> */}
                 <Route path="/" element={<Navigate to="/signin" replace />} />
-                <Route path="/layout" element={<Layout />}>
+                <Route path="/layoutAdmin" element={<Layout />}>
                     <Route index element={<Accueil />} />
                     <Route path="owners" element={<Owners />} />
                     <Route path="appartements" element={<Appartements />} />
