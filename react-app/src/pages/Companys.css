@@ -1,0 +1,84 @@
+.company-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px;
+    max-width: 94%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+/* .company-card:hover {
+    transform: scale(1.05);
+} */
+
+.company-content {
+    display: flex;
+}
+
+.company-image {
+    width: 25%;
+    height: auto;
+}
+
+.company-info {
+    flex-grow: 1;
+    padding: 46px;
+    text-align: left;
+}
+
+.about-us {
+    text-align: left;
+    padding: 0 20px;
+}
+
+/* Modal styles */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background: white;
+    padding: 20px 40px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 60%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.modal input,
+.modal textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.modal button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal button.save {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.modal button.cancel {
+    background-color: #f44336;
+    color: white;
+}

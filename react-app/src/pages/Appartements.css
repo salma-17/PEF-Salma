@@ -118,18 +118,25 @@ table .delete-button {
   background: white;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid red;
+
 }
 
 .modal h2 {
-  text-align: center;
-  margin-bottom: 20px;
+  /* text-align: center; */
+  /* margin-bottom: 20px; */
   color: #333;
+  border: 1px solid red;
+
 }
 
 .modal form div {
   margin-bottom: 15px;
-}
 
+}
+.modal form{
+  border: 1px solid rgb(30, 0, 255);
+}
 .modal form label {
   display: block;
   margin-bottom: 5px;
@@ -143,6 +150,7 @@ table .delete-button {
   border: 1px solid #ddd;
   border-radius: 5px;
   font-size: 16px;
+
 }
 
 .modal form button {

@@ -7,6 +7,7 @@
   text-align: center;
 
 }
+
 .signout{
   text-decoration: none;
   margin: 0px 10px 0px 5px;
@@ -28,7 +29,9 @@
   /* margin-right: 100px; */
 
 }
-
+.count{
+  margin-bottom: 100px;
+}
 .app {
   border: 2px solid #c7c7c7; 
   padding: 15px;
