@@ -15,7 +15,7 @@ const Navbar = () => {
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <Link className="nav-link" to="/">
+                        <Link className="nav-link" to="/layoutAdmin">
                             <FontAwesomeIcon icon={faHome} /> Accueil
                         </Link>
                     </li>
@@ -30,23 +30,23 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/owners">
+                        <Link className="nav-link" to="/layoutAdmin/owners">
                             <FontAwesomeIcon icon={faUser} /> Owners
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/employes">
+                        <Link className="nav-link" to="/layoutAdmin/employes">
                             <FontAwesomeIcon icon={faUsers} /> Employes
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/companys">
+                        <Link className="nav-link" to="/layoutAdmin/companys">
                             <FontAwesomeIcon icon={faIndustry} /> Companys
                         </Link>
                     </li>
                
                     <li className="nav-item">
-                        <Link className="nav-link" to="/reports">
+                        <Link className="nav-link" to="/layoutAdmin/reports">
                             <FontAwesomeIcon icon={faChartBar} /> Reports
                         </Link>
                     </li>
@@ -55,5 +55,4 @@ const Navbar = () => {
         </nav>
     );
 };
-
 export default Navbar;
