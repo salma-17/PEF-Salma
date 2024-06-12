@@ -1,7 +1,8 @@
 // src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import Layout from './components/Layout';
+import LayoutAdmin from './components/LayoutAdmin';
+import LayoutOwner from './owner_login/LayoutOwner';
 import Accueil from './pages/Accueil';
 import Owners from './pages/Owners';
 import Appartements from './pages/Appartements';
@@ -13,7 +14,8 @@ import Notifications from './pages/Notifications';
 import SignIn from './login/SignIn';
 import SignUp from './login/SignUp';  // Importez le composant Signup
 import Profile from './pages/Profile';
-// import SignOut from './login/SignOut';  // Importez le composant ForgotPassword
+import OwnerAccueil from './owners/OwnerAccueil';
+import Payement from './owners/Payement';
 
 
 function App() {
@@ -22,10 +24,14 @@ function App() {
             <Routes>
                 <Route path="/signin" element={<SignIn />} />
                 <Route path="/signup" element={<SignUp />} />
-                <Route path="/profile" element={<Profile />} />
-                {/* <Route path="/signin" element={<SignOut />} /> */}
-                <Route path="/" element={<Navigate to="/signin" replace />} />
-                <Route path="/layoutAdmin" element={<Layout />}>
+                <Route path="/" element={<SignIn />} />
+                <Route path="/layoutOwner" element={<LayoutOwner />} > 
+                    <Route index element={<OwnerAccueil />} />
+                    <Route path="payement" element={<Payement />} />
+                    <Route path="owners" element={<Owners />} />
+
+                </Route>
+                <Route path="/layoutAdmin" element={<LayoutAdmin />} >
                     <Route index element={<Accueil />} />
                     <Route path="owners" element={<Owners />} />
                     <Route path="appartements" element={<Appartements />} />
@@ -35,7 +41,8 @@ function App() {
                     <Route path="reports" element={<Reports />} />
                     <Route path="notifications" element={<Notifications />} />
                 </Route>
-            </Routes>
+                
+$            </Routes>
         </Router>
     );
 }

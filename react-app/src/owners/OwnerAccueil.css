@@ -1,17 +1,41 @@
 /* src/pages/Accueil.css */
 
 .accueil-container {
-  padding-top: 20px;  
+  /* padding-top: 20px;   */
   /* padding-left: 20px; */
   /* padding: 20px; */
   text-align: center;
-
+  /* border: 1px solid red; */
+  padding: 0;
+  width: 100%;
 }
 .signout{
   text-decoration: none;
   margin: 0px 10px 0px 5px;
+  color: red;
 }
-
+.img-acc{
+  background: url('../assets/accueil.jpg');
+  width: 100%;
+  height: 500px;
+  opacity: 0.8;
+}
+.div-acc{
+  margin: 0;
+}
+.para-one{
+  display: block;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: start ;
+  padding-top: 200px;
+}
+.para-tow{
+  display: block;
+  font-size: 50px;
+  font-weight: 700;
+  text-align:start;
+}
 /* .search-bar{
   display: inline-block;
   border: 1px solid blue;

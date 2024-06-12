@@ -4,6 +4,7 @@ import React from 'react';
 import './Accueil.css'; // Importez le fichier CSS pour la page d'accueil
 import { Link } from 'react-router-dom';
 import image from '../assets/accueil.jpg'
+
 const Accueil = () => {
     return (
         <div className="accueil-container">
@@ -29,7 +30,6 @@ const Accueil = () => {
                 <img className='image' src={image} alt="your image" />
             </div> */}
             <section className="accueil-content">
-
                 <Link to="appartements">
                     <div className="accueil-card">
                         <h2>Appartements</h2>
@@ -59,9 +59,7 @@ const Accueil = () => {
                         <h2>Blooks</h2>
                         <p>Contactez-nous pour toute question ou assistance.</p>
                     </div>
-                </Link>
-                
-                
+                </Link>  
             </section>
             
         </div>

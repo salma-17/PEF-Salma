@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faBuilding, faUser, faUsers, faIndustry, faBook, faChartBar } from '@fortawesome/free-solid-svg-icons';
-import './Navbar.css';  // Importez le fichier CSS
+import './NavbarAdmin.css';  // Importez le fichier CSS
 import logo from '../assets/logoS.png';
 
-const Navbar = () => {
+const NavbarAdmin = () => {
     return (
         <nav className="navbar navbar-expand-lg col-3">
             <Link className="navbar-brand" to="/">
@@ -54,4 +54,4 @@ const Navbar = () => {
         </nav>
     );
 };
-export default Navbar;
+export default NavbarAdmin;

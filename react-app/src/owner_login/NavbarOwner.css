@@ -1,0 +1,17 @@
+.navbar{
+  display: flex;  /* Utilisation de Flexbox pour le positionnement des éléments */
+  background-color: rgb(229, 241, 255);
+
+}
+/* .navbar-brand{
+  border: 2px solid rgb(255, 0, 187);
+} */
+
+.navbar-nav{
+  display: flex;
+  /* border: 2px solid rgb(0, 30, 255); */
+  /* margin-right: 200px; */
+}
+.nav-item{
+  list-style-type: none;
+}
